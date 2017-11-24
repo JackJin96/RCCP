@@ -15,8 +15,11 @@ const DEFAULT_PROBLEM: Problem =  Object.freeze({
   styleUrls: ['./new-problem.component.css']
 })
 export class NewProblemComponent implements OnInit {
+  
   newProblem: Problem = Object.assign({}, DEFAULT_PROBLEM);
+
   difficulties: string[] = ['easy', 'medium', 'hard', 'super'];
+
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
