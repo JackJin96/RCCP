@@ -1,4 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { Problem } from '../../model/problem.model';
+import { DataService } from '../../services/data.service';
+
+const DEFAULT_PROBLEM: Problem =  Object.freeze({
+  id: 0,
+  name: '',
+  desc: '',
+  difficulty: 'easy'
+});
 
 @Component({
   selector: 'app-new-problem',
@@ -6,10 +15,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-problem.component.css']
 })
 export class NewProblemComponent implements OnInit {
-
-  constructor() { }
+  newProblem: Problem = Object.assign({}, DEFAULT_PROBLEM);
+  difficulties: string[] = ['easy', 'medium', 'hard', 'super'];
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
   }
 
+  addProblem() {
+    this.dataService.addProblem(this.newProblem);
+  }
 }
