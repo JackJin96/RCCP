@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Problem } from '../../models/problem.model';
-import { PROBLEMS } from '../../mock-problems';
 import { DataService } FROM '../../services/data.service';
 
 @Component({
@@ -18,7 +17,7 @@ import { DataService } FROM '../../services/data.service';
   }
 
   getProblems(): void {
-     this.problems = PROBLEMS;
+     this.problems = this.DataService.getProblems();
   }
 
 }
