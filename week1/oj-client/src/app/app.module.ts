@@ -11,6 +11,7 @@ import { ProblemListComponent } from './components/problem-list/problem-list.com
 import { ProblemDetailComponent } from './components/problem-detail/problem-detail.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { NewProblemComponent } from './components/new-problem/new-problem.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { NewProblemComponent } from './components/new-problem/new-problem.compon
     ProblemListComponent,
     ProblemDetailComponent,
     PageNotFoundComponent,
-    NewProblemComponent
+    NewProblemComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

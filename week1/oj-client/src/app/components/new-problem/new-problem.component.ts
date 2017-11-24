@@ -24,5 +24,6 @@ export class NewProblemComponent implements OnInit {
 
   addProblem() {
     this.dataService.addProblem(this.newProblem);
+    this.newProblem = Object.assign({}, DEFAULT_PROBLEM);
   }
 }
