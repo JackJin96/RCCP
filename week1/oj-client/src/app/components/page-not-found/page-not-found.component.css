@@ -1,0 +1,23 @@
+
+.container {
+  text-align: center;
+  font-size: 100%;
+}
+
+.page {
+  margin: auto;
+}
+
+h1 {
+  padding-top: 2%;
+  font-size: 12em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+p {
+  padding-top: 1%;
+  font-size: 3em;
+}
