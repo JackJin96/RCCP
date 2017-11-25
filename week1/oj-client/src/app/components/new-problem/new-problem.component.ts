@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Problem } from '../../model/problem.model';
+import { Problem } from '../../models/problem.model';
 import { DataService } from '../../services/data.service';
 
 const DEFAULT_PROBLEM: Problem =  Object.freeze({
@@ -15,7 +15,7 @@ const DEFAULT_PROBLEM: Problem =  Object.freeze({
   styleUrls: ['./new-problem.component.css']
 })
 export class NewProblemComponent implements OnInit {
-  
+
   newProblem: Problem = Object.assign({}, DEFAULT_PROBLEM);
 
   difficulties: string[] = ['easy', 'medium', 'hard', 'super'];
