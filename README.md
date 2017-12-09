@@ -1,7 +1,3 @@
-# bittigercs503-1705
-How do I get set up?
-
-Summary of set up for first Project: Collaborative Online Judge
 # WEEK1 & WEEK2
 
 # Install NodeJs:
@@ -28,4 +24,24 @@ sudo npm install -g @angular/cli@latest
 
 sudo apt-get install terminator
 
+# Download Postman
+Follow: https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/
+
+# WEEK3
+
+# Install Redis
+
+wget http://download.redis.io/releases/redis-3.2.6.tar.gz
+
+tar xzf redis-3.2.6.tar.gz
+
+cd redis-3.2.6
+
+make
+
+sudo make install
+
+cd utils
+
+sudo ./install_server.sh
 
