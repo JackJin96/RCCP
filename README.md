@@ -72,11 +72,28 @@ deb http://nginx.org/packages/ubuntu/ xenial nginx
 
 deb-src http://nginx.org/packages/ubuntu/ xenial nginx
 
-Then run:
 
+Then run:
 sudo apt-get update
 
 sudo apt-get install nginx
 
+-----------------------------------------------------------------------------------
+
+#Using Docker
+
+write Dockerfile in the root or desired directory:
+
+FROM ubuntu:16.04
+MAINTAINER Jack Jin
+RUN apt-get update
+RUN apt-get install -y openjdk-8-jdk
+RUN apt-get install -y python3
+
+sudo docker build . -t docker_username/dir_name
+
+sudo docker login
+
+sudo docker push docker_username/dir_name
 
 
