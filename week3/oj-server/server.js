@@ -2,6 +2,10 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const http = require('http');
+const socketIO = require('socket.io');
+const io = socketIO();
+const editorSocketService = require('./services/editorSocketService')(io);
 
 //self-constructed
 const restRouter = require('./routes/rest');
@@ -19,4 +23,11 @@ app.use((req, res) => {
     res.sendFile('index.html', {root: path.join(__dirname, '../public')});
 })
 
-app.listen(3000, () => console.log("Example app listening on port 3000!"));
+const server = http.createServer(app);
+io.attach(server);
+server.listen(3000);
+server.on('listening', onListening);
+
+function onListening(){
+    console.log('App is listeing at port 3000!');
+}
