@@ -37,8 +37,8 @@ export class EditorComponent implements OnInit {
         this.initEditor();
         this.collaboration.restoreBuffer();
       });
-
   }
+  
 
   initEditor(): void {
     this.editor = ace.edit("editor");
@@ -52,7 +52,7 @@ export class EditorComponent implements OnInit {
 
     //callback, listens change and deal with event e
     this.editor.on('change', (e) => {
-      console.log('editor change: ' + JSON.stringify(e));
+      console.log('editor change: '+ JSON.stringify(e));
       if(this.editor.lastAppliedChange != e) {
         //pass event e as a string
         this.collaboration.change(JSON.stringify(e));
