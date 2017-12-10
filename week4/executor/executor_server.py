@@ -4,6 +4,7 @@ app = Flask(__name__) #__name__ is built in, read the name of the current file
 
 from flask import jsonify
 from flask import request
+import executor_utils as eu
 
 @app.route('/')
 def hello():
@@ -18,9 +19,12 @@ def build_and_run():
     code = data['code']
     lang = data['lang']
     print("API got called with code: %s in language %s " % (code, lang))
-    return jsonify({'build': 'build sth sth', 'run': 'run sth sth'})
+    #return jsonify({'build': 'build sth sth', 'run': 'run sth sth'})
+    result = eu.build_and_run(code, lang)
+    return jsonify(result)
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    eu.load_image()
+    app.run(debug=True)
     """default port 5000, debug=True is the same as nodemon, 
     used in developer mode to detect file change and rebuild"""
