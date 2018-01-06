@@ -96,4 +96,15 @@ sudo docker login
 
 sudo docker push docker_username/dir_name
 
+#WEEK 5
+
+npm install -g create-react-app
+cd into the file
+npm start
+
+delete everything under src
+mkdir for different components with .js and .css files
+add index.js
+
+
 
