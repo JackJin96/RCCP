@@ -1,4 +1,4 @@
-# WEEK1 & WEEK2
+# COJ (WEEK1 - WEEK4)
 
 # Install NodeJs:
 
@@ -96,7 +96,9 @@ sudo docker login
 
 sudo docker push docker_username/dir_name
 
-#WEEK 5
+#TAP NEWS (WEEK5 - )
+
+#Create React App
 
 npm install -g create-react-app
 cd into the file
@@ -106,5 +108,18 @@ delete everything under src
 mkdir for different components with .js and .css files
 add index.js
 
+#Express Generator
+
+sudo npm install express-generator -g
+express [option] [dir]  (eg. express server)
+cd server
+(delete unecessary code in app.js)
+npm install
+npm start
+
+#Start server
+
+'npm run build' in client, then
+'npm start' in server
 
 
