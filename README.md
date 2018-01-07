@@ -122,4 +122,7 @@ npm start
 'npm run build' in client, then
 'npm start' in server
 
+#Use Lodash for debouncing
+
+npm install --save lodash (in client)
 
