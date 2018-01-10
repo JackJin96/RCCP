@@ -80,7 +80,7 @@ sudo apt-get install nginx
 
 -----------------------------------------------------------------------------------
 
-#Using Docker
+# Using Docker
 
 write Dockerfile in the root or desired directory:
 
