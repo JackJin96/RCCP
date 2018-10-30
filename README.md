@@ -1,5 +1,3 @@
-# COJ (WEEK1 - WEEK4)
-
 # Install NodeJs:
 
 sudo apt-get update
@@ -26,8 +24,6 @@ sudo apt-get install terminator
 
 # Download Postman
 Follow: https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/
-
-# WEEK3
 
 # Install Redis
 
