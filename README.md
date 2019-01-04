@@ -1,3 +1,6 @@
+# Real-time Cooperative Coding platform
+Built with MEAN stack + python Flask + Docker
+
 # Install NodeJs:
 
 sudo apt-get update
