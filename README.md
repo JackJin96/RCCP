@@ -1,4 +1,4 @@
-# Real-time Cooperative Coding platform
+# Real-time Cooperative Coding Platform
 Built with MEAN stack + python Flask + Docker
 
 # Development Tools Installation
